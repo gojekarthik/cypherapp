@@ -10,7 +10,7 @@ function NavBar() {
     return(
          <div className="w-[1920] h-[117] flex flex-row justify-between shadow-xl" >
                 <button onClick={()=>navigate('/')}>
-                <img className="w-[280.42px] h-[88] relative ml-7" src="src/components/LOGO.svg"></img>
+                <img className="w-[280.42px] h-[88] relative ml-7" src="src/components/logo.svg"></img>
                 </button>
                 <p className="mr-10 flex items-center text-blackctext-2xl font-black font-['Inter']">How to Use</p>
         </div>
