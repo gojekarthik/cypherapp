@@ -1,9 +1,10 @@
 import React from 'react';
-import NavBar from '/home/karthik/Documents/Projects/cypherappreact/src/components/navbar.jsx';
-import '/home/karthik/Documents/Projects/cypherappreact/src/components/style.css';
-import AnimatedText from '/home/karthik/Documents/Projects/cypherappreact/src/components/animation';
-import TraningChoice from '/home/karthik/Documents/Projects/cypherappreact/src/components/Trainingchoice';
+import NavBar from '../navbar';
+// import '/home/karthik/Documents/Projects/cypherappreact/src/components/style.css';
+import AnimatedText from '../animation';
+import TraningChoice from '../Trainingchoice';
 import { useNavigate } from 'react-router-dom';
+
 
 function Home() {
     const navigate = useNavigate();
