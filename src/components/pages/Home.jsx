@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../navbar';
-// import '/home/karthik/Documents/Projects/cypherappreact/src/components/style.css';
+import '../style.css';
 import AnimatedText from '../animation';
 import TraningChoice from '../Trainingchoice';
 import { useNavigate } from 'react-router-dom';
