@@ -4,5 +4,8 @@ import React from 'react';
 import ViteReact from '@vitejs/plugin-react';
 
 export default defineConfig({
+  publicDir: 'build',
   plugins: [ViteReact()],
+
 });
+

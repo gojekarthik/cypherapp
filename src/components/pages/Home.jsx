@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../navbar';
+import NavBar from '../navbar.jsx';
 import '../style.css';
 import AnimatedText from '../animation';
 import TraningChoice from '../Trainingchoice';

@@ -12,7 +12,7 @@ function NavBar() {
                 <button onClick={()=>navigate('/')}>
                 <img className="w-[280.42px] h-[88] relative ml-7" src="logo.png"></img>
                 </button>
-                <p className="mr-10 flex items-center text-blackctext-2xl font-black font-['Inter']">How to Use</p>
+                {/* <p className="mr-10 flex items-center text-blackctext-2xl font-black font-['Inter']">How to Use</p> */}
         </div>
     )
 }

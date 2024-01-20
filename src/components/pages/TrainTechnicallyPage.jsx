@@ -1,6 +1,6 @@
 import React from "react";
 import PromptGenerator from "../promptsgen";
-import NavBar from "../navbar";
+import NavBar from "../navbar.jsx";
 import Timer from "../timer";
 
 function TrainTechnically(){
