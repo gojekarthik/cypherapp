@@ -12,7 +12,7 @@ function NavBar() {
 
   return (
     <div className="w-[1920px] h-[117px] flex flex-row justify-between shadow-xl">
-      <button onClick={() => navigate('/Homepage')}>
+      <button onClick={() => navigate('/Home')}>
         <img className="w-[280.42px] h-[88px] relative ml-7" src="logo.png" alt="Logo" />
       </button>
       {isAuthenticated && (
