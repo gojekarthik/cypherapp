@@ -12,7 +12,6 @@ return(
         <PromptGenerator promptType="Random Character" />
         <Timer />
         <PromptGenerator promptType="Random Action" />
-        <LoginButton />
         </div>
     </div>
 )
