@@ -17,10 +17,10 @@ function Home() {
           <AnimatedText />
         </div>
         <div className='flex flex-col space-y-10 mr-[240px] mt-[150px]'>
-          <button onClick={()=>navigate('train-technically')}>
+          <button onClick={()=>navigate('/train-technically')}>
             <TraningChoice textContent="Train Technically" />
           </button>
-          <button onClick={()=>navigate('play-character')}>
+          <button onClick={()=>navigate('/play-character')}>
             <TraningChoice textContent="Play Character" />
           </button>
         </div>

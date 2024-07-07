@@ -10,7 +10,7 @@ function LandingPage() {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/Homepage'); // Redirect to the Hoempage
+      navigate('Home'); // Redirect to the Hoempage
     }
   }, [isAuthenticated, navigate]);
 
@@ -21,8 +21,7 @@ function LandingPage() {
   return (
     <div className="bg-slate-200 h-screen">
       <NavBar />
-      <div>
-        <h1>Hello World</h1>
+      <div className="flex justify-center items-center h-full">
         {!isAuthenticated && <LoginButton />}
       </div>
     </div>

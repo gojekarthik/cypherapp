@@ -16,7 +16,7 @@ function NavBar() {
         <img className="w-[280.42px] h-[88px] relative ml-7" src="logo.png" alt="Logo" />
       </button>
       {isAuthenticated && (
-        <button onClick={() => logout({ returnTo: window.location.origin })} className="justify-end text-secondary mr-4">
+        <button onClick={() => logout({ returnTo: window.location.origin })} className="justify-end bg-secondary text-primary p-4 mr-4">
           Logout
         </button>
       )}
