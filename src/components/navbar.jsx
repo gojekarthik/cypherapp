@@ -1,20 +1,27 @@
 import React from "react";
-import ReactDOM from "react";
-import "./style.css";
 import { useNavigate } from "react-router-dom";
-
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 function NavBar() {
-    const navigate = useNavigate();
-    return(
-         <div className="w-[1920] h-[117] flex flex-row justify-between shadow-xl" >
-                <button onClick={()=>navigate('/')}>
-                <img className="w-[280.42px] h-[88] relative ml-7" src="logo.png"></img>
-                </button>
-                {/* <p className="mr-10 flex items-center text-blackctext-2xl font-black font-['Inter']">How to Use</p> */}
-        </div>
-    )
+  const navigate = useNavigate();
+  const { isAuthenticated, isLoading, logout } = useAuth0();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div className="w-[1920px] h-[117px] flex flex-row justify-between shadow-xl">
+      <button onClick={() => navigate('/Homepage')}>
+        <img className="w-[280.42px] h-[88px] relative ml-7" src="logo.png" alt="Logo" />
+      </button>
+      {isAuthenticated && (
+        <button onClick={() => logout({ returnTo: window.location.origin })} className="justify-end text-secondary mr-4">
+          Logout
+        </button>
+      )}
+    </div>
+  );
 }
 
 export default NavBar;

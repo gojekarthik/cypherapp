@@ -4,6 +4,7 @@ import '../style.css';
 import AnimatedText from '../animation';
 import TraningChoice from '../Trainingchoice';
 import { useNavigate } from 'react-router-dom';
+import LogoutButton from '../Logout.jsx';
 
 
 function Home() {

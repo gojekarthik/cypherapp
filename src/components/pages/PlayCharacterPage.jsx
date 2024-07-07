@@ -1,7 +1,8 @@
 import React from "react";
 import PromptGenerator from "../promptsgen";
 import NavBar from "../navbar.jsx";
-import Timer from "../timer";
+import Timer from "../timer.jsx";
+import LoginButton from "../LoginButton.jsx";
 
 function PlayCharacterPage(){
 return(
