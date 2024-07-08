@@ -6,6 +6,7 @@ import PlayCharacterPage from './components/pages/PlayCharacterPage.jsx';
 import TrainTechnically from './components/pages/TrainTechnicallyPage.jsx';
 import LandingPage from './components/pages/LandingPage.jsx';
 import LogoutButton from './components/Logout.jsx';
+import FeedbackForm from './components/pages/Feedback.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='play-character' element={<PlayCharacterPage />}></Route>
       <Route path='train-technically' element={<TrainTechnically />}></Route>
       <Route path='logout' element={<LogoutButton />}></Route>
+      <Route path='feedback' element={<FeedbackForm />}></Route>
     </Routes>
     
   );

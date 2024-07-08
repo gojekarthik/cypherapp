@@ -4,7 +4,7 @@ import '../style.css';
 import AnimatedText from '../animation';
 import TraningChoice from '../Trainingchoice';
 import { useNavigate } from 'react-router-dom';
-import LogoutButton from '../Logout.jsx';
+import FeedbackForm from './Feedback.jsx';
 
 
 function Home() {
@@ -12,6 +12,9 @@ function Home() {
   return (
     <div className="bg-slate-200 h-screen">
       <NavBar />
+      <div>
+        <button onClick={()=>navigate('/feedback')}>Help Us</button>
+      </div>
       <div className='flex justify-between items-center'>
         <div>
           <AnimatedText />
